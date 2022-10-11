@@ -4,6 +4,8 @@
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. and all the data is preserved via the external Leaderboard API service.
 
+## Preview
+![image](https://user-images.githubusercontent.com/68030297/195058193-9aeb7c9e-4967-4a18-a7a8-c2e92c1e96dd.png)
 
 ## Built With
 
@@ -13,8 +15,8 @@
 - JavaScript
 - Webpack
 
-## Live Demo (if available)
-[Experience a live Demo 🚀](https://livedemo.com)
+## Live Demo
+[Experience a live Demo 🚀](https://adel-gu.github.io/Leaderboard/dist/)
 
 
 ## Getting Started

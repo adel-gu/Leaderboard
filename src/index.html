@@ -16,7 +16,9 @@
         <div class="col">
           <div class="d-flex justify-content-between mb-3">
             <h2>Recent scores</h2>
-            <button type="button" class="btn btn-outline-dark">Refresh</button>
+            <button type="button" class="btn btn-outline-dark | refresh-btn">
+              Refresh
+            </button>
           </div>
           <table class="table table-striped border">
             <thead>
@@ -25,28 +27,7 @@
                 <th scope="col">Score</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>20</td>
-              </tr>
-            </tbody>
+            <tbody class="score-list"></tbody>
           </table>
         </div>
         <div class="col px-5">
@@ -81,6 +62,7 @@
               </li>
             </ul>
           </form>
+          <div class="alert alert-success alert-dismissible fade mt-3"></div>
         </div>
       </div>
     </main>

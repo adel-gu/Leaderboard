@@ -8,19 +8,20 @@
       rel="stylesheet"
     />
     <title>Leaderboard</title>
+    <link rel="shortcut icon" type="image/png" href="asset/trophy.png" />
   </head>
   <body>
     <main id="main">
-      <h1>Leaderboard</h1>
-      <div class="row mt-4">
+      <h1 class="text-center">Leaderboard 🏆</h1>
+      <div class="row mt-5">
         <div class="col">
           <div class="d-flex justify-content-between mb-3">
             <h2>Recent scores</h2>
-            <button type="button" class="btn btn-outline-dark | refresh-btn">
+            <button type="button" class="btn btn-warning | refresh-btn">
               Refresh
             </button>
           </div>
-          <table class="table table-striped border">
+          <table class="table table-striped table-warning border">
             <thead>
               <tr>
                 <th scope="col">Name</th>
@@ -36,7 +37,7 @@
             <ul class="list-unstyled m-0 p-0">
               <li class="mb-3">
                 <input
-                  class="form-control border"
+                  class="form-control outline"
                   type="text"
                   name="name"
                   id="name"
@@ -46,7 +47,7 @@
               </li>
               <li class="mb-3">
                 <input
-                  class="form-control border"
+                  class="form-control outline"
                   type="number"
                   name="score"
                   id="score"
@@ -56,9 +57,7 @@
                 />
               </li>
               <li class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-outline-dark">
-                  Submit
-                </button>
+                <button type="submit" class="btn btn-warning">Submit</button>
               </li>
             </ul>
           </form>

@@ -1,4 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
 #main {
-  margin-top: 6em;
-  margin-inline: 5em;
+  padding-top: 4em;
+  padding-inline: 5em;
+  min-height: 100%;
+  background: #373e4e;
+  color: white;
+}
+
+input.outline {
+  border: none;
+}
+
+input.outline:focus {
+  outline: 2px solid #fd7e14;
 }

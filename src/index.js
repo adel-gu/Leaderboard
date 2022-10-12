@@ -21,3 +21,5 @@ form.addEventListener('submit', (e) => {
 refreshBtn.addEventListener('click', () => {
   showScoresList(scoreListContainer);
 });
+
+showScoresList(scoreListContainer);

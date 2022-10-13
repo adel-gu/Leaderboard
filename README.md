@@ -16,7 +16,7 @@
 - Webpack
 
 ## Live Demo
-[Experience a live Demo 🚀](https://adel-gu.github.io/Leaderboard/dist/)
+[Experience a live Demo 🚀](https://adel-gu.github.io/Leaderboard/)
 
 
 ## Getting Started

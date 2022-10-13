@@ -14,12 +14,12 @@ const getScores = async () => {
 const showScoresList = async (container) => {
   // Show Spinner
   container.innerHTML = `
-    <tr
+    <div
     class="spinner-border text-warning position-absolute end-50 mt-2"
     role="status"
     >
       <span class="visually-hidden">Loading...</span>
-    </tr>
+    </div>
   `;
   const scores = await getScores();
   // reset the container

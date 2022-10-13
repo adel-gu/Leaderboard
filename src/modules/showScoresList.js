@@ -1,4 +1,5 @@
-const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/n0tbY0KgPZQ594I4ehx0/scores/';
+const API_URL =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/n0tbY0KgPZQ594I4ehx0/scores/';
 
 // get data from the API
 const getScores = async () => {
@@ -11,8 +12,19 @@ const getScores = async () => {
 
 // show data to the UI
 const showScoresList = async (container) => {
-  container.innerHTML = '';
+  // Show Spinner
+  container.innerHTML = `
+    <tr
+    class="spinner-border text-warning position-absolute end-50 mt-2"
+    role="status"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </tr>
+  `;
   const scores = await getScores();
+  // reset the container
+  container.innerHTML = '';
+  // Show data
   scores.forEach((scoreItem) => {
     const scoreElement = `
       <tr>

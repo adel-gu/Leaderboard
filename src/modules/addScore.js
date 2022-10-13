@@ -1,4 +1,5 @@
-const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/n0tbY0KgPZQ594I4ehx0/scores/';
+const API_URL =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/n0tbY0KgPZQ594I4ehx0/scores/';
 
 // Adding User score to the API.
 const AddScore = async (user, message) => {
@@ -12,7 +13,7 @@ const AddScore = async (user, message) => {
   });
 
   const result = await response.json();
-  message.innerHTML += `<strong>Success!</strong> ${result.result}`;
+  message.innerHTML = `<strong>Success!</strong> ${result.result}`;
   message.classList.add('show');
 };
 

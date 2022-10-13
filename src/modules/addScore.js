@@ -12,7 +12,7 @@ const AddScore = async (user, message) => {
   });
 
   const result = await response.json();
-  message.innerHTML += `<strong>Success!</strong> ${result.result}`;
+  message.innerHTML = `<strong>Success!</strong> ${result.result}`;
   message.classList.add('show');
 };
 

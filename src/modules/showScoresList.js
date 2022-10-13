@@ -11,8 +11,19 @@ const getScores = async () => {
 
 // show data to the UI
 const showScoresList = async (container) => {
-  container.innerHTML = '';
+  // Show Spinner
+  container.innerHTML = `
+    <div
+    class="spinner-border text-warning position-absolute end-50 mt-2"
+    role="status"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  `;
   const scores = await getScores();
+  // reset the container
+  container.innerHTML = '';
+  // Show data
   scores.forEach((scoreItem) => {
     const scoreElement = `
       <tr>
